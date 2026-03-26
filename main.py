@@ -7,6 +7,10 @@ from eth_account import Account
 from dotenv import load_dotenv
 
 # Load neural config
+import warnings
+from urllib3.exceptions import NotOpenSSLWarning
+warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
+
 load_dotenv()
 
 class Colors:
@@ -132,8 +136,10 @@ class AetherPerpNode:
         print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse {label} initiated for {coin}.{Colors.RESET}")
 
     def print_status_snapshot(self):
-        """Print a multi-line dashboard for all pairs."""
+        """Print a multi-line dashboard for all pairs with flicker reduction."""
         try:
+            # Move cursor to home (top-left) to overwrite smoothly
+            print("\033[H", end="")
             state = self.get_account_state()
             active_pairs = [p['coin'] for p in state['active_details']]
             print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")

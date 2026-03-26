@@ -26,4 +26,14 @@ Job Created
 
 [93m[AetherPerp-Pulse] Closing BTC position...[0m
 [92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
-[95m[ETH] Px:2067.90 | EMA:2069.3/2069.5 | Bal:$39.26[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.26[0m       [95m[BTC] Px:68908.00 | EMA:68954.5/68979.4 | Bal:$39.26[0m       [95m[ETH] Px:2067.80 | EMA:2069.0/2069.4 | Bal:$39.11[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68901.00 | EMA:68953.1/68978.7 | Bal:$39.11[0m       [95m[ETH] Px:2068.50 | EMA:2069.2/2069.4 | Bal:$39.10[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.10[0m       [95m[BTC] Px:68929.00 | EMA:68958.7/68981.3 | Bal:$39.10[0m       [95m[ETH] Px:2068.10 | EMA:2069.1/2069.4 | Bal:$39.09[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68904.00 | EMA:68943.8/68971.9 | Bal:$39.09[0m       
+[95m[ETH] Px:2067.90 | EMA:2069.3/2069.5 | Bal:$39.26[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.26[0m       [95m[BTC] Px:68908.00 | EMA:68954.5/68979.4 | Bal:$39.26[0m       [95m[ETH] Px:2067.80 | EMA:2069.0/2069.4 | Bal:$39.11[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68901.00 | EMA:68953.1/68978.7 | Bal:$39.11[0m       [95m[ETH] Px:2068.50 | EMA:2069.2/2069.4 | Bal:$39.10[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.10[0m       [95m[BTC] Px:68929.00 | EMA:68958.7/68981.3 | Bal:$39.10[0m       [95m[ETH] Px:2068.10 | EMA:2069.1/2069.4 | Bal:$39.09[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68904.00 | EMA:68943.8/68971.9 | Bal:$39.09[0m       [95m[ETH] Px:2067.40 | EMA:2068.7/2069.2 | Bal:$39.12[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.12[0m       [95m[BTC] Px:68899.00 | EMA:68942.8/68971.5 | Bal:$39.12[0m       [95m[ETH] Px:2068.60 | EMA:2069.0/2069.3 | Bal:$39.07[0m       [95m[HYPE] Px:39.05 | EMA:39.1/39.1 | Bal:$39.07[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003235345
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 39.049...[0m
+[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
+[95m[BTC] Px:68921.00 | EMA:68947.2/68973.5 | Bal:$39.07[0m       [95m[ETH] Px:2067.70 | EMA:2068.6/2069.1 | Bal:$39.11[0m       [95m[HYPE] Px:39.00 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68914.00 | EMA:68936.5/68966.0 | Bal:$39.11[0m       [95m[ETH] Px:2068.10 | EMA:2068.6/2069.1 | Bal:$39.09[0m       [95m[HYPE] Px:38.99 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68913.00 | EMA:68936.3/68965.9 | Bal:$39.09[0m       

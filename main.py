@@ -47,15 +47,18 @@ class AetherPerpNode:
             env = os.environ.copy()
             env["PATH"] = "/tmp:" + env.get("PATH", "")
             env["DGCLAW_API_KEY"] = self.api_key
-            cmd = "acp job completed --json --limit 10"
+            cmd = "acp job completed --json --limit 1"
             res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
             if res.returncode == 0:
                 data = json.loads(res.stdout)
                 jobs = data.get("jobs", [])
-                for j in jobs:
-                    if j.get("phase") == "COMPLETED":
-                        # Convert ISO timestamp to epoch
-                        ts_str = j.get("createdAt", "").replace("Z", "+00:00")
+                if jobs:
+                    last_id = jobs[0].get("id")
+                    res2 = subprocess.run(f"acp job status {last_id}", shell=True, capture_output=True, text=True, env=env)
+                    import re
+                    matches = re.findall(r"\(([\d\-T\:\.Z]+)\)", res2.stdout)
+                    if matches:
+                        ts_str = matches[-1].replace("Z", "+00:00")
                         from datetime import datetime
                         dt = datetime.fromisoformat(ts_str)
                         return dt.timestamp()

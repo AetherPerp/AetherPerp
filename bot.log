@@ -1,39 +1,0 @@
-/Users/kerimakay/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-
-[1m[95m⚡ AetherPerp | Multi-Neural Core Active (ETH, HYPE, BTC)[0m
-[95m[ETH] Px:2069.70 | EMA:2069.7/2069.7 | Bal:$39.00[0m       [95m[HYPE] Px:39.11 | EMA:39.1/39.1 | Bal:$39.00[0m       [95m[BTC] Px:68964.00 | EMA:68980.4/68994.5 | Bal:$39.00[0m       [95m[ETH] Px:2069.60 | EMA:2069.7/2069.7 | Bal:$38.99[0m       [95m[HYPE] Px:39.14 | EMA:39.1/39.1 | Bal:$38.99[0m       [95m[BTC] Px:68972.00 | EMA:68982.0/68995.2 | Bal:$38.99[0m       [95m[ETH] Px:2069.10 | EMA:2069.6/2069.7 | Bal:$39.06[0m       [95m[HYPE] Px:39.14 | EMA:39.1/39.1 | Bal:$39.06[0m       [95m[BTC] Px:68946.00 | EMA:68972.8/68989.6 | Bal:$39.06[0m       
-Job Created
---------------------------------------------------
-  Job ID             1003235330
-
-  Job submitted. Use `acp job status <jobId>` to check progress.
-
-
-[92m[TP Hit] BTC PnL: $0.13[0m
-
-[93m[AetherPerp-Pulse] Closing BTC position...[0m
-[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
-[95m[ETH] Px:2068.80 | EMA:2069.5/2069.6 | Bal:$39.11[0m       [95m[HYPE] Px:39.13 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68932.00 | EMA:68970.0/68988.4 | Bal:$39.11[0m       
-Job Created
---------------------------------------------------
-  Job ID             1003235334
-
-  Job submitted. Use `acp job status <jobId>` to check progress.
-
-
-[92m[TP Hit] BTC PnL: $0.21[0m
-
-[93m[AetherPerp-Pulse] Closing BTC position...[0m
-[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
-[95m[ETH] Px:2067.90 | EMA:2069.3/2069.5 | Bal:$39.26[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.26[0m       [95m[BTC] Px:68908.00 | EMA:68954.5/68979.4 | Bal:$39.26[0m       [95m[ETH] Px:2067.80 | EMA:2069.0/2069.4 | Bal:$39.11[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68901.00 | EMA:68953.1/68978.7 | Bal:$39.11[0m       [95m[ETH] Px:2068.50 | EMA:2069.2/2069.4 | Bal:$39.10[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.10[0m       [95m[BTC] Px:68929.00 | EMA:68958.7/68981.3 | Bal:$39.10[0m       [95m[ETH] Px:2068.10 | EMA:2069.1/2069.4 | Bal:$39.09[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68904.00 | EMA:68943.8/68971.9 | Bal:$39.09[0m       [95m[ETH] Px:2067.40 | EMA:2068.7/2069.2 | Bal:$39.12[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.12[0m       [95m[BTC] Px:68899.00 | EMA:68942.8/68971.5 | Bal:$39.12[0m       [95m[ETH] Px:2068.60 | EMA:2069.0/2069.3 | Bal:$39.07[0m       [95m[HYPE] Px:39.05 | EMA:39.1/39.1 | Bal:$39.07[0m       
-Job Created
---------------------------------------------------
-  Job ID             1003235345
-
-  Job submitted. Use `acp job status <jobId>` to check progress.
-
-
-[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 39.049...[0m
-[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
-[95m[BTC] Px:68921.00 | EMA:68947.2/68973.5 | Bal:$39.07[0m       [95m[ETH] Px:2067.70 | EMA:2068.6/2069.1 | Bal:$39.11[0m       [95m[HYPE] Px:39.00 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68914.00 | EMA:68936.5/68966.0 | Bal:$39.11[0m       [95m[ETH] Px:2068.10 | EMA:2068.6/2069.1 | Bal:$39.09[0m       [95m[HYPE] Px:38.99 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68913.00 | EMA:68936.3/68965.9 | Bal:$39.09[0m       [95m[ETH] Px:2068.40 | EMA:2068.7/2069.1 | Bal:$39.07[0m       [95m[HYPE] Px:39.02 | EMA:39.1/39.1 | Bal:$39.07[0m       [95m[BTC] Px:68913.00 | EMA:68936.3/68965.9 | Bal:$39.07[0m       [95m[ETH] Px:2068.70 | EMA:2068.7/2069.1 | Bal:$39.06[0m       [95m[HYPE] Px:39.01 | EMA:39.1/39.1 | Bal:$39.06[0m       [95m[BTC] Px:68931.00 | EMA:68935.3/68962.7 | Bal:$39.06[0m       [95m[ETH] Px:2069.10 | EMA:2068.7/2069.1 | Bal:$39.05[0m       [95m[HYPE] Px:39.06 | EMA:39.1/39.1 | Bal:$39.05[0m       [95m[BTC] Px:68932.00 | EMA:68935.5/68962.8 | Bal:$39.05[0m       [95m[ETH] Px:2069.10 | EMA:2068.7/2069.1 | Bal:$39.04[0m       [95m[HYPE] Px:39.04 | EMA:39.1/39.1 | Bal:$39.04[0m       [95m[BTC] Px:68931.00 | EMA:68935.3/68962.7 | Bal:$39.04[0m       

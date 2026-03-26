@@ -34,7 +34,7 @@ class AetherPerpNode:
         self.timeframe = "1m"
         self.ema_fast = 9
         self.ema_slow = 21
-        self.leverage = 20
+        self.leverage_map = {"HYPE": 10, "ETH": 20, "BTC": 20}
         self.size_usdc = 10
         self.tp_usd = 0.10
         self.sl_usd = 0.10
@@ -118,8 +118,9 @@ class AetherPerpNode:
 
     def execute_trade(self, coin, side, price):
         """Execute high-precision Neural Delta trade."""
-        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {coin} at {price}...{Colors.RESET}")
-        req = {"action": "open", "pair": coin, "side": side, "size": str(self.size_usdc * self.leverage), "leverage": self.leverage}
+        lev = self.leverage_map.get(coin, 20)
+        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {coin} at {price} ({lev}x)...{Colors.RESET}")
+        req = {"action": "open", "pair": coin, "side": side, "size": str(self.size_usdc * lev), "leverage": lev}
         self._send_acp_job("perp_trade", req, coin, side)
 
     def execute_close(self, coin):

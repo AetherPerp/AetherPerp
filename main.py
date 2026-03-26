@@ -138,13 +138,20 @@ class AetherPerpNode:
             active_pairs = [p['coin'] for p in state['active_details']]
             print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")
             print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET} | {Colors.WARNING}Sub: {state['addr'][:10]}...{Colors.RESET}")
-            print(f"{Colors.INFO}Active Positions: {','.join(active_pairs) if active_pairs else 'None'}{Colors.RESET}")
-            print("-" * 40)
+            print("-" * 55)
+            print(f"{'Coin':<6} | {'Price':<10} | {'EMA9/21':<15} | {'PnL':<8}")
+            print("-" * 55)
+            # Create a lookup for PnL
+            pnls = {p['coin']: p['pnl'] for p in state['active_details']}
             for coin in self.pairs:
                 data = self.get_market_data(coin)
                 if data:
-                    print(f"{Colors.AetherPerp}{coin:<5}{Colors.RESET} | Px: {data['price']:<9.2f} | EMA9/21: {data['ema_f']:.2f}/{data['ema_s']:.2f}")
-            print("-" * 40)
+                    pnl_val = pnls.get(coin, 0.0)
+                    pnl_str = f"${pnl_val:+.2f}" if coin in pnls else "---"
+                    pnl_color = Colors.SUCCESS if pnl_val > 0 else (Colors.ERROR if pnl_val < 0 else Colors.RESET)
+                    
+                    print(f"{Colors.AetherPerp}{coin:<6}{Colors.RESET} | {data['price']:<10.2f} | {data['ema_f']:.1f}/{data['ema_s']:.1f}      | {pnl_color}{pnl_str}{Colors.RESET}")
+            print("-" * 55)
         except Exception as e:
             print(f"Syncing... {e}")
 

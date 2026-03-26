@@ -15,3 +15,15 @@ Job Created
 [93m[AetherPerp-Pulse] Closing BTC position...[0m
 [92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
 [95m[ETH] Px:2068.80 | EMA:2069.5/2069.6 | Bal:$39.11[0m       [95m[HYPE] Px:39.13 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68932.00 | EMA:68970.0/68988.4 | Bal:$39.11[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003235334
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] BTC PnL: $0.21[0m
+
+[93m[AetherPerp-Pulse] Closing BTC position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
+[95m[ETH] Px:2067.90 | EMA:2069.3/2069.5 | Bal:$39.26[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.26[0m       [95m[BTC] Px:68908.00 | EMA:68954.5/68979.4 | Bal:$39.26[0m       [95m[ETH] Px:2067.80 | EMA:2069.0/2069.4 | Bal:$39.11[0m       [95m[HYPE] Px:39.10 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68901.00 | EMA:68953.1/68978.7 | Bal:$39.11[0m       [95m[ETH] Px:2068.50 | EMA:2069.2/2069.4 | Bal:$39.10[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.10[0m       [95m[BTC] Px:68929.00 | EMA:68958.7/68981.3 | Bal:$39.10[0m       [95m[ETH] Px:2068.10 | EMA:2069.1/2069.4 | Bal:$39.09[0m       [95m[HYPE] Px:39.08 | EMA:39.1/39.1 | Bal:$39.09[0m       [95m[BTC] Px:68904.00 | EMA:68943.8/68971.9 | Bal:$39.09[0m       

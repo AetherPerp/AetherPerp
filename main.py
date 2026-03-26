@@ -148,6 +148,27 @@ class AetherPerpNode:
         subprocess.run(cmd, shell=True, env=env)
         print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse initiated for {side.upper()}.{Colors.RESET}")
 
+    def print_status_snapshot(self):
+        """Print a single-line clean status for watch/dashboard."""
+        try:
+            state = self.get_account_state()
+            data = self.get_market_data()
+            if data:
+                price = data['price']
+                ema_f = data['ema_f']
+                ema_s = data['ema_s']
+                pos_str = ",".join(state['active_pairs']) if state['active_pairs'] else "None"
+                
+                print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Dashboard ---{Colors.RESET}")
+                print(f"{Colors.INFO}Pair:     {self.pair}{Colors.RESET}")
+                print(f"{Colors.INFO}Price:    {price:.2f}{Colors.RESET}")
+                print(f"{Colors.INFO}EMA 9/21: {ema_f:.3f} / {ema_s:.3f}{Colors.RESET}")
+                print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET}")
+                print(f"{Colors.WARNING}Active:   {pos_str}{Colors.RESET}")
+                print(f"{Colors.AetherPerp}----------------------------{Colors.RESET}")
+        except:
+            print("Fetching status...")
+
     def run(self):
         print(f"\n{Colors.BOLD}{Colors.AetherPerp}⚡ AetherPerp | Scalper Core Active{Colors.RESET}")
         
@@ -164,8 +185,6 @@ class AetherPerpNode:
                     print(f"\r{Colors.AetherPerp}[AetherPerp-Node] {self.pair}: {price:.2f} | EMA{self.ema_fast}/{self.ema_slow}: {ema_f:.3f}/{ema_s:.3f} | Bal: ${state['value']:.2f}{Colors.RESET}   ", end="", flush=True)
                     
                     if self.pair not in state['active_pairs']:
-                        # Simple Scalping Logic: EMA Cross on 1m
-                        # We need history to check cross
                         hist = data['history']
                         prev_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
                         prev_ema_s = self.calculate_ema(hist[:-1], self.ema_slow)
@@ -175,11 +194,15 @@ class AetherPerpNode:
                         elif prev_ema_f >= prev_ema_s and ema_f < ema_s:
                             self.execute_trade("short", price)
                 
-                time.sleep(20) # High frequency polling
+                time.sleep(20)
             except Exception as e:
                 print(f"\n{Colors.ERROR}[AetherPerp-Error] {e}{Colors.RESET}")
                 time.sleep(10)
 
 if __name__ == "__main__":
+    import sys
     node = AetherPerpNode()
-    node.run()
+    if len(sys.argv) > 1 and sys.argv[1] == "status":
+        node.print_status_snapshot()
+    else:
+        node.run()

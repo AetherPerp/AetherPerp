@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 if [ "$1" == "logs" ]; then
     tail -f bot.log
 elif [ "$1" == "watch" ]; then
-    watch -n 1 "tail -n 20 bot.log"
+    watch -t -c -n 1 "python3 main.py status"
 elif [ "$1" == "stop" ]; then
     echo "Stopping AetherPerp-Node..."
     pkill -f main.py

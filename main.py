@@ -121,7 +121,7 @@ class AetherPerpNode:
                     active.append(entry.get("coin"))
 
             return {"value": perp_val + l1_val, "active_pairs": active, "addr": subaccount}
-        except:
+        except Exception as e:
             return {"value": 0, "active_pairs": [], "addr": self.wallet.address}
 
     def execute_trade(self, side, price):

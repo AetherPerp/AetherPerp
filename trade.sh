@@ -6,6 +6,12 @@
 # Navigate to script directory
 cd "$(dirname "$0")"
 
-# Execute python script with arguments
-export PYTHONUNBUFFERED=1
-python3 main.py "$@"
+# Execute commands
+if [ "$1" == "logs" ]; then
+    tail -f bot.log
+elif [ "$1" == "watch" ]; then
+    watch -n 1 "tail -n 20 bot.log"
+else
+    export PYTHONUNBUFFERED=1
+    python3 main.py "$@"
+fi

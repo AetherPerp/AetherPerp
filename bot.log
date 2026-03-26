@@ -1,2 +1,17 @@
 /Users/kerimakay/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
+
+[1m[95m⚡ AetherPerp | Multi-Neural Core Active (ETH, HYPE, BTC)[0m
+[95m[ETH] Px:2069.70 | EMA:2069.7/2069.7 | Bal:$39.00[0m       [95m[HYPE] Px:39.11 | EMA:39.1/39.1 | Bal:$39.00[0m       [95m[BTC] Px:68964.00 | EMA:68980.4/68994.5 | Bal:$39.00[0m       [95m[ETH] Px:2069.60 | EMA:2069.7/2069.7 | Bal:$38.99[0m       [95m[HYPE] Px:39.14 | EMA:39.1/39.1 | Bal:$38.99[0m       [95m[BTC] Px:68972.00 | EMA:68982.0/68995.2 | Bal:$38.99[0m       [95m[ETH] Px:2069.10 | EMA:2069.6/2069.7 | Bal:$39.06[0m       [95m[HYPE] Px:39.14 | EMA:39.1/39.1 | Bal:$39.06[0m       [95m[BTC] Px:68946.00 | EMA:68972.8/68989.6 | Bal:$39.06[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003235330
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] BTC PnL: $0.13[0m
+
+[93m[AetherPerp-Pulse] Closing BTC position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
+[95m[ETH] Px:2068.80 | EMA:2069.5/2069.6 | Bal:$39.11[0m       [95m[HYPE] Px:39.13 | EMA:39.1/39.1 | Bal:$39.11[0m       [95m[BTC] Px:68932.00 | EMA:68970.0/68988.4 | Bal:$39.11[0m       

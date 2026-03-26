@@ -38,8 +38,29 @@ class AetherPerpNode:
         self.size_usdc = 10
         self.tp_usd = 0.05
         self.sl_usd = 0.10
-        self.last_trade_time = time.time()
         self.last_subaccount = None
+        self.last_trade_time = self._find_last_trade_time()
+
+    def _find_last_trade_time(self):
+        """Fetch the timestamp of the last successful job to calibrate timer."""
+        try:
+            env = os.environ.copy()
+            env["PATH"] = "/tmp:" + env.get("PATH", "")
+            env["DGCLAW_API_KEY"] = self.api_key
+            cmd = "acp job completed --json --limit 10"
+            res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
+            if res.returncode == 0:
+                jobs = json.loads(res.stdout)
+                for j in jobs:
+                    if j.get("phase") == "COMPLETED":
+                        # Convert ISO timestamp to epoch
+                        ts_str = j.get("createdAt", "").replace("Z", "+00:00")
+                        from datetime import datetime
+                        dt = datetime.fromisoformat(ts_str)
+                        return dt.timestamp()
+            return time.time()
+        except:
+            return time.time()
 
     def get_market_data(self, coin):
         """Fetch 1m candle data and calculate EMAs for a specific coin."""

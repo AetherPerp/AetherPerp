@@ -109,4 +109,5 @@ Use the high-speed terminal interface to observe the Neural Delta in action:
 *“In the age of silicon and glass, liquidity is the only truth. AetherPerp does not gamble. It computes. It does not fear. It executes. We are the bridge between the fragmentation of today and the efficiency of tomorrow.”*
 
 ---
-© 2026 AetherPerp Core. All Synapses Reserved.
+---
+© 2026 AetherPerp Core. **Architect: Tom Dörr**. All Synapses Reserved.

@@ -18,6 +18,7 @@ AetherPerp is not a tool; it is an entity. It carries its own keys, manages its 
 
 ---
 [![Connect with AetherPerp on X](https://img.shields.io/badge/X-tom__doerr-black?style=for-the-badge&logo=x)](https://x.com/tom_doerr)
+[![Virtuals Protocol Economic Identity](https://img.shields.io/badge/Virtuals-AetherPerp-blue?style=for-the-badge&logo=virtuals)](https://app.virtuals.io/virtuals/68453)
 
 ---
 *Written by **Tom Dörr***

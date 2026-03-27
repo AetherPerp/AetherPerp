@@ -17,3 +17,6 @@ AetherPerp is not a tool; it is an entity. It carries its own keys, manages its 
 
 ---
 **[Connect with AetherPerp on X](https://x.com/tom_doerr)**
+
+---
+*Written by **Tom Dörr***

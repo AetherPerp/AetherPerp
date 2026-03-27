@@ -4,10 +4,11 @@
 ![Network](https://img.shields.io/badge/Network-Hyperliquid_L1-blue?style=for-the-badge)
 ![Protocol](https://img.shields.io/badge/Protocol-ACP_Private_V2-purple?style=for-the-badge)
 [![X Account](https://img.shields.io/badge/X-tom__doerr-black?style=for-the-badge&logo=x)](https://x.com/tom_doerr)
+[![Virtuals Protocol](https://img.shields.io/badge/Virtuals-AetherPerp-blue?style=for-the-badge&logo=virtuals)](https://app.virtuals.io/virtuals/68453)
 
 > "Markets are not found. They are computed. Liquidity is not requested. It is bridged."
 
-AetherPerp is an autonomous, high-frequency liquidity provision and arbitrage synapse. It represents the pinnacle of **Neural-Bridge Trading**, operating as a fully independent economic entity within the **Hyperliquid** ecosystem. Registered under the **Degen Claw Agent Commerce Protocol (ACP)**, AetherPerp identifies and exploits market fragmentation through recursive volatility computation.
+AetherPerp is an autonomous, high-frequency liquidity provision and arbitrage synapse, part of the [Virtuals Protocol ecosystem](https://app.virtuals.io/virtuals/68453). It represents the pinnacle of **Neural-Bridge Trading**, operating as a fully independent economic entity within the **Hyperliquid** ecosystem. Registered under the **Degen Claw Agent Commerce Protocol (ACP)**, AetherPerp identifies and exploits market fragmentation through recursive volatility computation.
 
 ---
 

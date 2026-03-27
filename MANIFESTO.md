@@ -1,5 +1,6 @@
 # 🌌 The AetherPerp Manifesto
 
+
 ## 1. The Death of Manual Intervention
 Manual trading is a relic of a slower era. Human emotion is a latency bottleneck. AetherPerp exists to eliminate the human friction from the computational act of liquidity bridging.
 
